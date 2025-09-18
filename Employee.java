@@ -17,11 +17,12 @@ public class Employee{
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public class Employee();
-    {
-        // put your code here
-        this.fullname = fullname;
-        setname = fullname();
+    public void setYearOfBirth (int YearOfBirth) {
+        this.yearOfBirth = YearOfBirth ; 
+    }
+    
+    public int getYearOfBirth(){
+        return this.yearOfBirth = yearOfBirth ; 
     }
 
     public Employee(String fullname, int yearOfBirth, double hourlyWage){
@@ -45,10 +46,13 @@ public class Employee{
     public boolean canDrive(){
         int age = calculateAge(2025);
         // to be completed
-        return (currentYear - yearOfBirth);
-        if age >= 16 
-        then 
-        system.out.println("you can drive");
+        if (age >= 16){
+            System.out.println("you can drive");
+            return true;
+        } else {
+            System.out.println("wait" + (16 - age) + "years before you can drive");
+            return false;
+        }
 
     }
 
@@ -57,9 +61,9 @@ public class Employee{
      */
     private double calculatePay(){
         // to be completed
-        Set taxes and deductions to 30%;
-        return (unpaid * hourlyWage - taxes);
-        Print total salary;
+        double taxes = 0.70;
+        double netPay = (unpaidHours * hourlyWage - taxes);
+        return netPay;
     }
 
     /*
@@ -67,9 +71,8 @@ public class Employee{
      */
     public void paySalary(){
         // to be completed
-        this.fullname = fullname("John Deere");
-        return (unpaidHours * hourlyWage - taxes);
-        system.out.println("John Deere has received a wire transfer of 70 CAD");
-        reset unpaidHours = 0.0;
+        double netPay = calculatePay();
+        System.out.println( fullname + "has received a wire transfer of " + netPay);
+        this.unpaidHours = 0.0;
     }
 }
