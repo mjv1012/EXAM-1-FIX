@@ -11,6 +11,19 @@ public class Employee{
     private double hourlyWage;
     private double unpaidHours;
 
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public class Employee();
+    {
+        // put your code here
+        this.fullname = fullname;
+        setname = fullname();
+    }
+
     public Employee(String fullname, int yearOfBirth, double hourlyWage){
         this.fullname = fullname;
         this.yearOfBirth = yearOfBirth;
@@ -18,7 +31,7 @@ public class Employee{
         onLeave = false;
         unpaidHours = 0.0;
     }
-    
+
     /**
      * Returns true is an employee is above 16 years old
      */
@@ -32,6 +45,11 @@ public class Employee{
     public boolean canDrive(){
         int age = calculateAge(2025);
         // to be completed
+        return (currentYear - yearOfBirth);
+        if age >= 16 
+        then 
+        system.out.println("you can drive");
+
     }
 
     /*
@@ -39,6 +57,9 @@ public class Employee{
      */
     private double calculatePay(){
         // to be completed
+        Set taxes and deductions to 30%;
+        return (unpaid * hourlyWage - taxes);
+        Print total salary;
     }
 
     /*
@@ -46,5 +67,9 @@ public class Employee{
      */
     public void paySalary(){
         // to be completed
+        this.fullname = fullname("John Deere");
+        return (unpaidHours * hourlyWage - taxes);
+        system.out.println("John Deere has received a wire transfer of 70 CAD");
+        reset unpaidHours = 0.0;
     }
 }
